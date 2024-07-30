@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Fakiha</span> Sarfraz</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+
+        </nav>
+        
+    </header>
+    <main> 
+        <section id="home" class="home">
+            <div class="home-content">
+                <h3>Hi,</h3>
+                <h1>I'm <span>Fakiha <br></span>a Frontend Developer</h1>
+                <p>I specialize in creating visually appealing and responsive websites using HTML, CSS, and JavaScript. I'm passionate about delivering seamless user experiences and continuously learning new technologies to enhance my skills.</p>
+                <div class="social_icons">
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                
+                    <a href="https://twitter.com/yourprofile" target="_blank">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+                <a href="#" class="btn-2">Hire Me</a>
+                <a href="#" class="btn-2">Contact</a>
+               
+            </div>
+            <div class="img-box">
+                <img src="images/profile-picture1.png" alt="Profile Picture">                
+            </div>
+        </section> 
+        <section id="about" class="about">
+         
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>        
+                <h3>Frontend <span>Developer</span></h3>
+                <p>Hi, I'm Fakiha, a front-end developer with a passion for building seamless and intuitive web experiences. With strong skills in HTML, CSS, and JavaScript, I transform design concepts into interactive, user-friendly interfaces. I'm dedicated to continuous learning and staying updated with the latest industry trends.</p>
+                <a href="#" class="btn-3">Hire Me</a>
+            </div>
+        </section> 
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <div class="education-content">
+                <div class="education-1">
+                    <h3>Bachelor's in Computer Science</h3>
+                    <h5>2022-26</h5>
+                    <h4>Government College University, Lahore</h4>
+                    <h3>Relevant Coursework</h3>
+                    <p>Web Development, Programming in Java and C++, Database</p>
+                </div>
+                <div class="education-1">
+                    <h3>Intermediate</h3>
+                    <h5>2020-22</h5>
+                    <h4>Aspire Group of College, Gujranwala</h4>
+                    <h3>Relevant Coursework</h3>
+                    <p>Basic Computing and C Language</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects-content">
+                <div class="project-item">
+                    <h3>Project 1</h3>
+                    <p>Login Page</p>
+                    <img src="./images/Project1.jpg" alt="" width="250px" height="250px">
+                 
+                </div>
+                <div class="project-item">
+                    <h3>Project 2</h3>
+                    <p>Image Gallery</p>
+                    <img src="./images/Project2.jpg" alt="" width="250px" height="250px">
+                </div>
+                <div class="project-item">
+                    <h3>Project 3</h3>
+                    <p>Calculator</p>
+                    <img src="./images/Project-03.png" alt="" width="250px" height="250px">
+                    
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <form action="https://example.com/submit-form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        
+    </main>
+    
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
